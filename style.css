@@ -2,6 +2,47 @@ body {
   background-color: #333;
 }
 
+.music-controls {
+	position: fixed;
+	top: 20px; /* Keeps buttons near the top of the page */
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 10px; /* Adds spacing between the buttons */
+	z-index: 10; /* Ensures buttons are always visible on top */
+  }
+  
+  /* Music Buttons */
+  .music-controls button {
+	background-color: #f0e4d0;
+	border: 2px solid #553C13;
+	border-radius: 10px;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #6A4B18;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: background-color 0.3s ease;
+  }
+  
+  .music-controls button:hover {
+	background-color: #e8d4bd;
+  }
+
+  .directions {
+	background-color: #f0e4d0;
+	color: #6A4B18;
+	border: 2px solid #553C13;
+	border-radius: 10px;
+	padding: 20px;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	max-width: 300px; /* Ensures the box doesn't get too wide */
+	text-align: left; /* Aligns text for readability */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+
 .candle-count-display {
   text-align: center;
   margin-top: 150px;

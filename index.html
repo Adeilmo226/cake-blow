@@ -12,9 +12,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   </head>
   <body>
+    <!-- Music Controls Section -->
+    <div class="music-controls">
+      <button id="playMusic">Play Music</button>
+      <button id="stopMusic">Stop Music</button>
+    </div>
+
+    <!-- Candle Count -->
     <div class="candle-count-display">
       Candles on the Cake: <span id="candleCount">0</span>
     </div>
+
+    <!-- Cake -->
     <div class="cake">
       <div class="plate"></div>
       <div class="layer layer-bottom"></div>
@@ -25,6 +34,11 @@
       <div class="drip drip2"></div>
       <div class="drip drip3"></div>
     </div>
+
+    
+    <!-- Birthday Music -->
+    <audio id="birthdayMusic" src="birthday_song.wav" loop></audio>
+
     <script src="script.js"></script>
   </body>
 </html>
